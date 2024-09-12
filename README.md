@@ -1,60 +1,33 @@
 # Billing System
 
-## Project Overview
+The **Billing System** is a web-based platform developed to streamline item sales, generate invoices, and manage billing operations for businesses. The system is designed with user-friendly features like item search with auto-suggestions, dynamic bill updates, and invoice generation with PDF download options. It is built using PHP, MySQL, JavaScript, HTML, and Tailwind CSS.
 
-The **Pathirana Motors Billing System** is a simple and secure web-based platform that allows administrators to manage billing operations. This system is built using **PHP**, **Tailwind CSS**, **JavaScript**, and **MongoDB**. It features user authentication and the ability to generate bills in PDF format, ensuring smooth business operations for Pathirana Motors.
+## Features
 
-### Key Features:
-- **User Authentication**: Only authorized users can log in and access the system.
-- **Responsive Design**: The application is designed to work seamlessly across devices using Tailwind CSS.
-- **Modular Components**: The navbar and footer are separated into individual files for easy maintenance.
-- **PDF Bill Generation**: Bills can be generated and downloaded as PDF files.
-- **MongoDB Integration**: MongoDB is used as the database for storing billing records and user data.
+- **User Authentication**: Secure login functionality.
+- **Item Search with Auto-Suggestions**: Real-time suggestions while searching for items.
+- **Dynamic Bill Creation**: Add items to bills, update quantities, and calculate total price dynamically.
+- **Database-Driven**: Items, bills, and transactions are stored in a MySQL database.
+- **Invoice Generation**: Create and view invoices with detailed breakdowns.
+- **PDF Invoice Download**: Convert the invoice into an A4-sized PDF and download it.
+- **Stock Management**: Updates available item quantities when items are added to the bill.
 
-## Tech Stack
+## Technologies Used
 
-- **Frontend**: 
-  - HTML5
-  - Tailwind CSS
-  - JavaScript (Vanilla)
-  
-- **Backend**: 
-  - PHP (without a framework)
+- **Frontend**: HTML, Tailwind CSS, JavaScript, jQuery
+- **Backend**: PHP, MySQL
+- **Server**: XAMPP or any PHP-enabled server environment
 
-- **Database**: 
-  - MongoDB
-  
-- **PDF Generation**: 
-  - TCPDF (or any other PHP PDF library)
-  
-- **Version Control**: 
-  - Git
-  
-- **Deployment**: 
-  - Can be deployed on any PHP-supported server or locally using XAMPP/LAMP.
+## Prerequisites
 
-## Project Structure
+To run the project locally, ensure you have the following installed:
+
+- [XAMPP](https://www.apachefriends.org/index.html) or any other local server environment with PHP and MySQL support
+- A modern web browser
+
+## Installation and Setup
+
+### Step 1: Clone the Repository
 
 ```bash
-├── public/
-│   ├── css/
-│   │   └── tailwind.css         # Tailwind CSS file
-│   ├── js/
-│   │   └── main.js              # JavaScript file for interactivity
-│   ├── img/
-│   └── index.php                # Login page
-│
-├── app/
-│   ├── views/
-│   │   ├── navbar.php           # Navbar (included in all pages)
-│   │   ├── footer.php           # Footer (included in all pages)
-│   │   ├── dashboard.php        # Dashboard (after login)
-│   │   └── billing.php          # Billing management page
-│   ├── includes/
-│   │   └── auth.php             # Authentication logic
-│   └── config/
-│       └── database.php         # MongoDB connection configuration
-│
-├── README.md                    # Project documentation
-├── .env                         # Environment variables (MongoDB, etc.)
-└── .gitignore                   # Git ignore file
+git clone https://github.com/your-username/billing-system.git
