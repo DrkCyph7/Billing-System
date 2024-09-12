@@ -1,4 +1,4 @@
-# Pathirana Motors - Billing System
+# Billing System
 
 ## Project Overview
 
