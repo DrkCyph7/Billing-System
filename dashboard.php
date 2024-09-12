@@ -9,15 +9,11 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 // Define custom links for the dashboard page
 $customLinks = [
-    'dashboard' => ['title' => 'Dashboard', 'href' => 'dashboard.php'],
-    'reports' => ['title' => 'Reports', 'href' => 'reports.php'],
     'Add Item' => ['title' => 'Add Item', 'href' => 'add_item.php'],
     'about' => ['title' => 'About', 'href' => '#about'],
-    'All Items' => ['title' => 'All Itms', 'href' => 'view_items.php']
+    'All Items' => ['title' => 'All Items', 'href' => 'view_items.php'],
+    'logout' => ['title' => 'Logout', 'href' => 'logout.php']
 ];
-
-// Set the current page
-$page = 'dashboard';
 
 // Show logout button
 $showLogout = true;

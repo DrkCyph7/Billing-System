@@ -26,8 +26,8 @@ if (!empty($query)) {
 
         // Prepare response data
         foreach ($items as &$item) {
-            $item['available_count'] = $item['quantity'];
-            unset($item['quantity']); // Remove 'quantity' if you don't want it in the response
+            $item['available_count'] = $item['quantity']; // Use available_count instead of quantity
+            unset($item['quantity']); // Remove 'quantity' from the response
         }
 
         // Set the response type to JSON and echo the items
