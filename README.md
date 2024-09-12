@@ -31,3 +31,23 @@ To run the project locally, ensure you have the following installed:
 
 ```bash
 git clone https://github.com/your-username/billing-system.git
+
+
+Folder Structure
+.
+├── assets
+│   ├── css
+│   ├── js
+│   └── images
+├── config
+│   └── db.php
+├── database
+│   └── billing_system.sql
+├── templates
+│   ├── header.php
+│   ├── navbar.php
+│   ├── footer.php
+├── billing.php
+├── add_item_to_bill.php
+├── search.php
+└── README.md
